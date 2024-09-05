@@ -1,0 +1,12 @@
+services:
+  producer:
+    build: .
+    volumes:
+      - ./:/app
+    networks:
+      - producer-network
+
+networks:
+  producer-network:
+    name: rabbitmq_network
+    external: true
