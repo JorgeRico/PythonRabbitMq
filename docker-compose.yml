@@ -1,0 +1,14 @@
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    ports:
+      - "15672:15672" # RabbitMQ Management UI
+      - "5672:5672" # RabbitMQ Messaging Port
+    networks:
+      - container-network
+
+networks:
+  container-network:
+    driver: bridge
+    name: rabbitmq_network
