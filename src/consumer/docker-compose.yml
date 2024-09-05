@@ -1,0 +1,12 @@
+services:
+  consumer:
+    build: .
+    volumes:
+      - ./:/app
+    networks:
+      - consumer-network
+
+networks:
+  consumer-network:
+    name: rabbitmq_network
+    external: true
