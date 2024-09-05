@@ -33,3 +33,4 @@ $ docker-compose up --build
 
 ## Acknowledgements
  - [RabbitMq Python](https://www.rabbitmq.com/tutorials/tutorial-three-python)
+ - [Readme editor](https://readme.so/es/editor)
